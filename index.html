@@ -8,19 +8,30 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Article preview component</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="css/styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Link -->
+  <script src="https://kit.fontawesome.com/9c12f75243.js" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Article preview component</title>
 
 </head>
 
 <body>
   <main>
+
     <section class="top">
-      <p>.</p>
+      <p class="hide">.</p>
     </section>
 
     <section class="bottom">
+      <img src="images/icon-share.svg" alt="icon" class="share">
       <div class="container">
         <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
         <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
@@ -28,35 +39,37 @@
       </div>
 
       <div class="contact">
-        <div class="overlay">
-          Share
-        </div>
-        <div class="container">
-          <div class="stats">
-            <img src="images/avatar-michelle.jpg" alt="Michelle">
-            <h2>Michelle Appleton</h2>
-            <time datetime="2020-06-28">28 Jun 2020</time>
+        <div class="overlay hide">
+          <div class="container-two">
+            <div class="case">
+              <h2>Share</h2>
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <img src="images/share-dark.svg" alt="Share" class="share-dark">
           </div>
-          <img src="images/icon-share.svg" alt="icon">
+        </div>
+
+        <div class="container">
+          <img src="images/avatar-michelle.jpg" alt="Michelle" class="author">
+          <div class="stats">
+            <h2>Michelle Appleton</h2>
+            <p>28 Jun 2020</p>
+          </div>
+
 
         </div> <!-- End container -->
       </div>
     </section>
   </main>
 
-
-
-
-
-
-
-
-
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jairzinho Adeyina</a>.
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
