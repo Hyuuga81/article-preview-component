@@ -33,10 +33,10 @@ main {
 
 section {
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row wrap; */
 }
 
 .container {
@@ -201,4 +201,93 @@ section {
 .attribution {
     margin-top: 150px;
     font-size: .9em;
+}
+
+/**************** DESKTOP STYLES ****************/
+
+@media (min-width: 1440px) {
+    /************** GENERAL STYLES ***************/
+
+    body {
+        min-height: 100vh;
+    }
+
+    main {
+        width: 50.69%;
+        align-items: stretch;
+        margin: 200px 0;
+        padding: 0;
+    }
+
+    .top {
+        width: 39%;
+        margin-top: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    .bottom {
+        width: 61%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .bottom h1 {
+        margin-top: 32px;
+        font-size: 1.54em;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0.25px;
+    }
+
+    .share {
+        bottom: 36px;
+        right: 40px;
+    }
+
+    /************** OVERLAY ***************/
+
+    .overlay {
+        width: 55%;
+        bottom: 84px;
+        right: -68px;
+        border-radius: 10px;
+
+    }
+
+    .overlay::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        bottom: -12px;
+        border: 0.5em solid rgba(72, 85, 106, 1);
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    .overlay .container-two .case {
+        width: 87.2%;
+        justify-content: space-between;
+    }
+
+
+    .share-dark {
+        display: none;
+    }
+
+    /************** FOOTER ***************/
+
+    .attribution {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
 }
