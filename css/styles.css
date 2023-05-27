@@ -213,6 +213,7 @@ section {
     }
 
     main {
+        max-width: 730px;
         width: 50.69%;
         align-items: stretch;
         margin: 200px 0;
@@ -277,6 +278,12 @@ section {
 
     .share-dark {
         display: none;
+    }
+
+    /************** STATS ***************/
+
+    .contact {
+        margin-bottom: 32px;
     }
 
     /************** FOOTER ***************/
