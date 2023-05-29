@@ -101,6 +101,17 @@ section {
     right: 22px;
 }
 
+.share-dark {
+    position: absolute;
+    z-index: 2;
+    padding: 10px;
+    background-color: #6E8098;
+    color: #fff !important;
+    border-radius: 50%;
+    bottom: 22px;
+    right: 22px;
+}
+
 /**************** STATS ***************/
 
 .contact {
@@ -144,12 +155,12 @@ section {
     flex-flow: row wrap;
 }
 
-.overlay .share-dark {
+/* .overlay .share-dark {
     padding: 10px;
     background-color: #6E8098;
     border-radius: 50%;
     color: #fff !important;
-}
+} */
 
 .overlay h2 {
     color: #9DAEC2;
@@ -247,6 +258,11 @@ section {
         right: 40px;
     }
 
+    .share-dark {
+        bottom: 36px;
+        right: 40px;
+    }
+
     /************** OVERLAY ***************/
 
     .overlay {
@@ -276,9 +292,9 @@ section {
     }
 
 
-    .share-dark {
+    /* .share-dark {
         display: none;
-    }
+    } */
 
     /************** STATS ***************/
 
